@@ -25,3 +25,9 @@ curl http://localhost:8080/getMax
 ```bash
 curl http://localhost:8080/getMax
 ```
+
+## Get visited stats
+
+```bash
+curl http://localhost:8080/getRequestStats
+```
