@@ -15,18 +15,18 @@ func setupRouter(router *gin.Engine) {
 	h := healthcheck.New()
 	go h.Start()
 	router.GET(
-		"/getInfo", h.GetInfo,
+		"/get_info", h.GetInfo,
 	)
 	router.GET(
-		"/getMin", h.GetMin,
+		"/get_min", h.GetMin,
 	)
 	router.GET(
-		"/getMax", h.GetMax,
+		"/get_max", h.GetMax,
 	)
 	router.GET(
-		"/getStats", h.GetMax,
+		"/get_stats", h.GetMax,
 	)
 	router.GET(
-		"/getRequestStats", h.GetRequestStats,
+		"/get_request_stats", h.GetRequestStats,
 	)
 }

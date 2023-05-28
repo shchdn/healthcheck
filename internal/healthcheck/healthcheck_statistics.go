@@ -28,7 +28,7 @@ func initHealthcheckStatistics() *Statistics {
 func (s *Statistics) UpdateStatistics(data map[url]common.SiteInfo) {
 	var minLatencySite, maxLatencySite common.SiteInfo
 	for _, info := range data {
-		if info.Error != nil && *info.Status != http.StatusOK {
+		if info.Error != nil || *info.Status != http.StatusOK {
 			continue
 		}
 		if minLatencySite.Latency == 0 || info.Latency < minLatencySite.Latency {

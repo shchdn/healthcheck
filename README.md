@@ -8,26 +8,26 @@ Interview task
 make http
 ```
 
-## Check min
+## Get min
 
 ```bash
-curl http://localhost:8080/getMin
+curl "http://localhost:8080/get_min"
 ```
 
-## Check max
+## Get max
 
 ```bash
-curl http://localhost:8080/getMax
+curl "http://localhost:8080/get_max"
 ```
 
-## Check max
+## Get info
 
 ```bash
-curl http://localhost:8080/getMax
+curl "http://localhost:8080/get_info?url=https://instagram.com"
 ```
 
 ## Get visited stats
 
 ```bash
-curl http://localhost:8080/getRequestStats
+`curl "http://localhost:8080/get_request_stats"`
 ```
